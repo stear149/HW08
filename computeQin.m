@@ -1,3 +1,18 @@
+%==========================================================================
+% function [Q] = computeQin(t)
+%
+% Input Argument:
+% t is the time since the beginning of the rainfall event. t is a scalar. 
+% t has units of [s]
+%
+% Returns:
+% Q is the inflow discharge to the pond at time t. Q is a scalar. 
+% Q has units of [m3/s]
+%
+% Author: Group I
+%
+% Version 29 Oct. 2025
+%==========================================================================
 function [Q] = computeQin(t)
    tau1 = t/20000;
    tau2 = t/40000;
