@@ -21,6 +21,11 @@
 %   (Group I)
 %   University of Minnesota
 %
+%    Current Best
+%    r = [1,72,84]
+%    L = [14.991,.393,.449]
+%    Amax = [49770]
+%
 % Version:
 %   28 October 2025
 % 
