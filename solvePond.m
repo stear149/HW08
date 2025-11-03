@@ -8,11 +8,14 @@
 %   L = [La, Lb, Lc]    A 3 x 1 matrix of L values for the lenght of the
 %                       wier
 %
-% Returns
+% Returns:
 %   maxTotalArea        Maximum of total area of pond A and B
 %   maxOutflow          Maximum of out folow from pond B
 %   maxDepth            Maximum depth of ponds A and B
 %
+% Notes:
+%    There are toggles to turn graphing on and off, found near the top.
+%    Label plot_output
 %
 % Author:
 %   Evan M. Stearns 
