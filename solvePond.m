@@ -42,13 +42,14 @@ function [maxTotalArea, maxOutflow, maxDepth] = solvePond(r, L)
     La = L(1); 
     Lb = L(2); 
     Lc = L(3); 
+
+    plot_output = false;
+    check_validity = false;
     
     assert(ra <= 75,"<ra> must be less than 75");
     assert(rb <= 75,"<rb> must be less than 75");
     assert(rc <= 95,"<rc> must be less than 75");
 
-    plot_output = true;
-    check_validity = true;
     dMax = 2.7; % [m]
     dMin = 1; % [m]
     QMaxAllowable = 1.8; % [m^3/s]
@@ -159,13 +160,13 @@ function [maxTotalArea, maxOutflow, maxDepth] = solvePond(r, L)
         toc
     end
 
-    if check_validity
-        % Check for valid design
-        try
-            validityCheck(maxOutflow, QMaxAllowable, maxDepth, dMax);
-        catch
-            % If no function is found, do nothing
-        end
-    end
+%    if check_validity
+%       % Check for valid design
+%        try
+%            validityCheck(maxOutflow, QMaxAllowable, maxDepth, dMax);
+%        catch
+%            % If no function is found, do nothing
+%        end
+%    end
 
 end
