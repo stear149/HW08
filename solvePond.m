@@ -25,9 +25,9 @@
 %   University of Minnesota
 %
 %    Current Best
-%    r = [10,71,84]
-%    L = [25,.399,.442]
-%    Amax = [49899]
+%    r = [10,72,83]
+%    L = [30,.372,.441]
+%    Amax = [49844]
 %
 % Version:
 %   28 October 2025
